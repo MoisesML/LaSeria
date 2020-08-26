@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: DoHyeon;
+    src: url(../DoHyeon/DoHyeon-Regular.woff);
+}
+
+@font-face{
+    font-family: Yanone;
+    src: url(../sds/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+
+header{
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    /* border: 1px black solid; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 80%;
+    height: 25%;
+    border: 1px white solid;
+    align-self: center;
+    background-color: white;
+    text-align: center;
+}
+
+nav{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px white solid; */
+    padding: 0 0 0 30px;
+    font-family: DoHyeon;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    /* border: 1px white solid; */
+}
+
+header nav #navForm{
+    color: rgb(141, 68, 248);
+}
+
+.network{
+    height: 90px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px white solid; */
+    align-items: center;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    align-self: center;
+    /* border: 1px white solid; */
+}
+
+.icon{
+    padding: 5px;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+.icon-facebook{
+    background-color: rgb(24, 119, 243);
+}
+.icon-whatsapp{
+    background-color: rgb(38, 205, 100)
+}
+.icon-youtube{
+    background-color: rgb(247, 0, 0);
+}
+.icon-twitch{
+    background-color: rgb(141, 68, 248);
+}
+.icon-instagram{
+    background-image: url(./instagram.jpg);
+    background-size: cover;
+}
+
+main{
+    width: 100%;
+    padding: 0 0 0 180px;
+}
+
+h2{
+    color: rgb(141, 68, 248);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+}
+
+.secInicio{
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* border: 1px black solid; */
+    background-image: url(./FondoInicio.jpg);
+    background-size: cover;
+}
+
+.content{
+    width: 100%;
+    height: 30%;
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 0 3% 0 0; */
+}
+
+.titulo{
+    color: white;
+    font-size: 80px;
+    text-shadow: 4px 3px black;
+    font-family: DoHyeon;
+}
+
+.slogan{
+    color: white;
+    font-family: Yanone;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin: 0 0 25px 0;
+    text-shadow: 2px 2px black;
+}
+
+.btnInicio{
+    height: 44px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 0 15px 30px;
+    font-weight: bold;
+    box-shadow: 3px 3px black;
+}
+
+.btnInicio:hover{
+    cursor: pointer;
+}
+
+.secService{
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px black solid; */
+    height: 100vh;
+    background-color: white;
+}
+
+.titleService{
+    font-family: DoHyeon;
+    font-size: 40px;
+}
+
+.servicios{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicio{
+    width: 22%;
+    height: 100%;
+    border: 1px black solid;
+    background-image: url(https://picsum.photos/200/300);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.option{
+    font-family: Yanone;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description{
+    /* width: 80%;
+    height: 80%; */
+    background-color: white;
+}
+
+#menu{
+    width: 180px;
+    height: 200px;
+    background-color: white;
+    position: fixed;
+    bottom: 180px;
+    visibility: hidden;
+    left: 180px;
+}
+
+/* //---------------------------------------------------- */
+
+footer{
+    width: 100%;
+    height: 250px;
+    padding: 0 10px 0 190px;
+    /* border: 1px white solid; */
+    background-color: rgb(48, 21, 253);
+    font-family: Yanone;
+}
+
+footer .content{
+    display: grid;
+    grid-template-rows: repeat(4,50px);
+    grid-template-columns: repeat(6,1fr);
+    color: white;
+    gap: 5px;
+}
+
+footer .content .footer{
+    display: flex;
+    /* border: 1px white solid; */
+    align-items: center;
+    border-top: 1px white solid;
+}
+
+footer .content .footer:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    grid-row: 3 span;
+    grid-column: 2 span;
+}
+
+footer .content .footer:nth-of-type(5){
+    grid-row: 3 span;
+}
+
+footer .content .footer:nth-of-type(8){
+    grid-row: 2 span;
+}
+
+footer .content .footer:nth-of-type(11){
+    grid-column: 6 span;
+}
+
+footer img{
+    width: 180px;
+    background-color: transparent;
+}
